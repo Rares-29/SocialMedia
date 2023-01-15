@@ -1,0 +1,109 @@
+* {
+   box-sizing:border-box; 
+   font-family: 'Poppins', sans-serif;
+
+}
+
+:root{
+    --c1: #0eb7f4;
+}
+
+body {
+    background-color:#f7f7f7;
+    
+}
+
+h1{
+ text-align:center;
+ color:var(--c1);
+}
+
+label {
+    margin-left: 10px;
+    font-size:20px;
+}
+
+form {
+    width:100%;
+}
+input, button{
+    display:block;
+    margin:auto;
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width:100%;
+}
+
+.form{
+    background-color:white;
+    padding: 15px;
+    border: 1px solid rgb(111, 111, 111);
+    border-radius:20px;
+    width: 50%;
+    margin:auto;
+}
+
+.submit-btn
+{
+    margin-top:20px;
+    background-color: #0eb7f4;
+    color: white;
+    width: 50%;
+    border-radius:20px;
+    transition:0.5s;
+}
+
+.submit-btn:hover
+{
+    cursor:pointer;
+    background-color: rgb(247, 247, 247);
+    width:55%;
+    color:black;
+    padding-top:9px; 
+    padding-bottom:9px;
+}
+
+@media (max-width: 1000px)
+{
+    .form{
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px)
+{ 
+ .form {
+    width: 65%;
+ }
+ h1 {
+    font-size: 1.5rem;
+ }
+ label {
+    font-size: 1rem;
+ }
+ p {
+    font-size: 0.8rem;
+ }
+}
+
+@media (max-width: 350px)
+{
+    .form {
+        width:75%;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    label {
+        font-size: 0.7rem;
+    }
+    .submit-btn {
+        width:75%;
+    }
+    .submit-btn:hover {
+        width:85%;
+    }
+}
