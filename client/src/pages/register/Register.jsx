@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import "./register.css"
+import "./register.scss"
+
 import axios from "axios"
 const Register = () => {
     const [inputs, setInputs] = useState({
@@ -40,7 +41,7 @@ const Register = () => {
                 {error}
                 <button onClick = {handleRegister} className='submit-btn'>Register</button>
             </form>
-            <p>You don't have an account?<span> <a href = "google.com">Register here</a></span></p>
+            <p>You have an account?<span> <a href = "/login">Login here</a></span></p>
             </div>
         </div>
     )

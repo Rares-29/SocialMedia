@@ -1,0 +1,48 @@
+
+.leftbar{
+    flex:2;
+    padding-left: 10px;
+    padding-top: 20px;
+    position:sticky;
+    top:50px;
+    height:calc(100vh - 50px);
+    overflow:scroll;
+
+    &::-webkit-scrollbar{
+        display:none;
+    }
+    
+    hr {
+        margin:20px 0;
+        background-color:lightgrey;
+        height:0.5px;
+        border:none;
+        }
+    .menu {
+        display:flex;
+        flex-direction:column;
+        gap: 10px;
+        p {
+            font-size:12px;
+            margin:0;
+        }
+
+        .item {
+            display:flex;
+            gap: 10px;
+            align-items:center;
+            img {
+                width:20px;
+                height:20px;
+                border-radius:50%;
+                
+            }
+    
+            
+            span {
+                font-size:14px;
+            }
+        }
+    }
+    
+}

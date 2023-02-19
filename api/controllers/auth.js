@@ -29,7 +29,7 @@ export const login = ((req, res) => {
     const q = "SELECT * FROM users WHERE username = ?"
     db.query(q, [req.body.username], (err, data) => {
         if (err) return res.status(500).json(err);
-        if (data.length === 0) res.status(404).json("User not found");
+        if (data.length === 0) return res.status(404).json("User not found");
         const checkPassword = bcrypt.compareSync(req.body.password, data[0].password)
         if (!checkPassword)
             return res.status(404).json("Wrong password");
