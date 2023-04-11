@@ -1,14 +1,40 @@
+@import "../../../public/styles/styles.scss";
+
 .story {
     display:flex;
     margin-top:10px;
     gap:10px;
+    height:200px;
+    background-color:#f7f7f7;
+    @include mobile {
+        height:50px;
+        justify-content: space-between;
+    }
     .item {
         flex:1;
-        
+        position:relative;
+
         img {
             width:100%;
-            height:200px;
+            height:100%;
             border-radius:20px;
+            object-fit: cover;
+            @include mobile {
+                height:50px;
+                width:50px;
+                border-radius: 50%;
+            }
+        }
+        span {
+            font-size:12px;
+            font-weight:500px;
+            color:white;
+            position:absolute;
+            bottom: 10px;
+            left:10px;
+            @include mobile {
+                display:none;
+            }
         }
     }
 }

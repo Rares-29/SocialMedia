@@ -1,5 +1,11 @@
+@import "../../../public/styles/styles.scss";
+
+
 
 .leftbar{
+    @include mobile {
+        display:none;
+    }
     flex:2;
     padding-left: 10px;
     padding-top: 20px;
@@ -28,14 +34,19 @@
         }
 
         .item {
+            cursor:pointer;
             display:flex;
             gap: 10px;
             align-items:center;
             img {
                 width:20px;
                 height:20px;
-                border-radius:50%;
+                object-fit: cover;
                 
+                &.user {
+
+                    border-radius:50%;
+                }
             }
     
             

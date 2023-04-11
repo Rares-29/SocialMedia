@@ -3,24 +3,24 @@ import "./story.scss"
 
 const stories = [
     {
-        id: "1",
-        name: "John",
-        img: "/assets/cutu.jpeg"
-    },
-    {
         id: "2",
-        name: "John",
-        img: "/assets/cutu.jpeg"
+        name: "Cutu",
+        img: "/assets/cutu2.jpeg"
     },
     {
         id: "3",
-        name: "John",
-        img: "/assets/cutu.jpeg"
+        name: "Cindy",
+        img: "/assets/cutu3.jpeg"
     },
     {
         id: "4",
-        name: "John",
-        img: "/assets/cutu.jpeg"
+        name: "Sweetie",
+        img: "/assets/cutu4.jpeg"
+    },
+    {
+        id: "5",
+        name: "Cindy3",
+        img: "/assets/cutu5.jpeg"
     }
 ]
 

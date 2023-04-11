@@ -29,8 +29,8 @@ const navBar = () => {
       <EmailOutlinedIcon/>
       <NotificationsNoneOutlinedIcon/>
       <div className = "user">
-        <img src = ""></img>
-        <span>John Doe</span>
+        <img src = "/assets/cutu3.jpeg"></img>
+        <span>Sandu Rares</span>
       
       </div>
     </div>

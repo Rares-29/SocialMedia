@@ -1,0 +1,19 @@
+* {
+    box-sizing:border-box; 
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+ }
+
+
+ 
+ :root{
+     --c1: #0eb7f4;
+ }
+ 
+
+
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}

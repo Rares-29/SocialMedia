@@ -1,5 +1,8 @@
+@import "../../../public/styles/styles.scss";
+
 .navbar
 {
+    z-index:100;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -31,6 +34,9 @@
                 border:none;
                 width:500px;
                 height:30px;
+                @include mobile {
+                    display:none;
+                }
             }
         }
     }
@@ -38,12 +44,16 @@
 
     .right
     {
+        @include mobile {
+            display:none;
+        }
         display:flex;
         align-items:center;
         gap:30px;
  
         .user 
         {
+            cursor: pointer;
             font-weight:500;
             display:flex;
             align-items:center;
